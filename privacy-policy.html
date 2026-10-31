@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Journali</title>
+<meta name="description" content="Privacy Policy for Journali, a language-learning journaling app for iOS.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --fg: #1c1c1e;
+    --muted: #6c6c70;
+    --bg: #ffffff;
+    --rule: #e5e5ea;
+    --link: #c2185b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #f2f2f7; --muted: #aeaeb2; --bg: #000000; --rule: #2c2c2e; --link: #ff6b9d; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 0.5rem; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 0.75rem; }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; }
+  p, li { margin: 0.75rem 0; }
+  ul, ol { padding-left: 1.4rem; }
+  a { color: var(--link); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; display: block; overflow-x: auto; }
+  th, td { border: 1px solid var(--rule); padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; }
+  th { background: rgba(128,128,128,0.08); }
+  code { font-size: 0.9em; background: rgba(128,128,128,0.12); padding: 0.1em 0.35em; border-radius: 4px; }
+  blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 3px solid var(--rule); color: var(--muted); }
+  em { color: var(--muted); }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); font-size: 0.85rem; color: var(--muted); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p><strong>Last updated: 28 October 2026</strong></p>
+<p>Journali is a personal open-source project. It is designed to keep your writing
+on your own device.</p>
+<h2>Who we are</h2>
+<p>Journali is developed by an individual developer and published under the
+GNU General Public License v3.0. There is no company, no backend server, and no
+account system.</p>
+<p>Contact: <a href="https://github.com/Chris-Mooney852/journali/issues">https://github.com/Chris-Mooney852/journali/issues</a></p>
+<h2>What is stored on your device</h2>
+<ul>
+<li><strong>Journal entries</strong> — the text you write, its date, tags, target language,
+  and proficiency level.</li>
+<li><strong>Analysis reports</strong> — the feedback returned by the AI provider you chose.</li>
+<li><strong>API keys</strong> — the key for the AI provider you configured, stored in the iOS
+  Keychain.</li>
+<li><strong>Widget snapshot</strong> — a small summary (streak count, daily prompt, one
+  vocabulary word) shared with the Journali home-screen widget.</li>
+</ul>
+<p>All of this lives in the app's own storage on your device.</p>
+<h2>What leaves your device</h2>
+<p>Journali has no server and sends nothing to the developer.</p>
+<p>When you request AI feedback, the app sends your journal text, your target
+language and level, and your API key <strong>directly</strong> to the provider you selected:</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Endpoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepSeek</td>
+<td><code>api.deepseek.com</code></td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td><code>api.openai.com</code></td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td><code>api.anthropic.com</code></td>
+</tr>
+<tr>
+<td>Google Gemini</td>
+<td><code>generativelanguage.googleapis.com</code></td>
+</tr>
+<tr>
+<td>Groq</td>
+<td><code>api.groq.com</code></td>
+</tr>
+<tr>
+<td>Custom / Ollama</td>
+<td>the address you enter; defaults to <code>localhost</code></td>
+</tr>
+</tbody>
+</table>
+<p>Those providers handle the data under their own privacy policies. The developer
+of Journali never receives a copy.</p>
+<p><strong>Demo mode</strong> sends nothing anywhere and reads no API key.</p>
+<h2>What is not collected</h2>
+<p>Journali contains no analytics, no crash reporting, no advertising, and no
+tracking. It does not request your location, contacts, photos, health data, or
+advertising identifier.</p>
+<h2>Third-party purchases</h2>
+<p>AI providers may charge for API usage. Those arrangements are between you and
+the provider. Journali does not process payments and receives no billing
+information.</p>
+<h2>Children</h2>
+<p>Journali is not directed at children under 13.</p>
+<h2>Deleting your data</h2>
+<p>Settings → <em>Delete All Journal Data</em> removes every journal entry, analysis
+report, widget snapshot, and saved API key from your device. Uninstalling the
+app also removes this data.</p>
+<p>Because nothing is stored on a developer server, deleting the app deletes
+everything.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be published at this address
+with a new "last updated" date.</p>
+<hr>
+<footer>
+  <p>Journali is an open-source iOS app. <a href="https://github.com/Chris-Mooney852/journali">Source repository</a> &middot; <a href="terms.html">Terms of Use</a></p>
+</footer>
+</main>
+</body>
+</html>
